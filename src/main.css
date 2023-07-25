@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  background: hsl(204, 43%, 93%);
+  display: grid;
+  place-content: center;
+  place-items: center;
+  height: 100vh;
+}
+
+.grid {
+  box-shadow: 10px 8px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+  display: grid;
+  width: 45rem;
+  height: 32rem;
+  grid-template-areas:
+    "grid-1 grid-1"
+    "grid-2 grid-3"
+    "grid-4 grid-4";
+}
+
+.grid-1 {
+  grid-area: grid-1;
+  background: #fff;
+  height: 14.5rem;
+  padding: 2.5rem 2.8rem 1.4rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.grid-1__title {
+  color: hsl(179, 62%, 43%);
+}
+
+.grid-1__guarantee-info {
+  color: hsl(71, 73%, 54%);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.grid-1__text {
+  width: 90%;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: hsl(218, 22%, 67%);
+}
+
+.grid-2 {
+  grid-area: grid-2;
+  background: hsl(179, 62%, 43%);
+  padding: 2.5rem 2.8rem;
+  border-radius: 0 0 0 0.5rem;
+}
+
+.grid-2__title {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: normal;
+}
+
+.grid-2__price {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.grid-2__price span {
+  font-size: 1rem;
+  color: hsl(179, 58%, 63%);
+  margin: 0 0.3rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.grid-2__price-info {
+  font-size: 1.15rem;
+  color: hsl(204, 43%, 93%);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.btn__signUp {
+  background: hsl(71, 73%, 54%);
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn__signUp:hover {
+  background: hsl(71, 62%, 50%);
+}
+
+.grid-3 {
+  position: relative;
+  grid-area: grid-3;
+  background: hsla(179, 61%, 44%, 0.794);
+  padding: 2.5rem 2.8rem;
+  border-radius: 0 0 0.5rem 0;
+}
+
+.grid-3__title {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.grid-3__list {
+  list-style: none;
+  color: hsl(179, 69%, 78%);
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.img-label {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0.2rem;
+  background: hsl(179, 58%, 63%);
+  border-radius: 0.5rem 0 0.5rem 0;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.img-label:hover {
+  background: hsl(179, 29%, 55%);
+}
+
+#showDev {
+  display: none;
+}
+
+.devInfo {
+  opacity: 0;
+  transform: translateY(-3.5rem);
+  z-index: -1;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  background: hsl(170, 96%, 71%);
+  width: 100%;
+  grid-area: grid-4;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.4s ease-in-out;
+}
+
+#showDev:checked ~ .devInfo {
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 0;
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  color: hsl(178, 59%, 41%);
+  font-weight: bold;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+@media (width <= 909px) {
+  .container {
+    place-content: center;
+    place-items: center;
+    height: 100dvh;
+  }
+
+  .grid {
+    width: 26rem;
+    height: auto;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+    grid-template-areas:
+      "grid-1"
+      "grid-2"
+      "grid-3"
+      "grid-4";
+  }
+
+  .grid-1 {
+    height: 18rem;
+    padding: 2.5rem 2rem 1.8rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .grid-1__text {
+    width: 95%;
+    line-height: 1.8;
+  }
+
+  .grid-2 {
+    padding: 2.5rem 2rem;
+    border-radius: 0 0 0 0rem;
+  }
+
+  .btn {
+    padding: 1.5rem 0 0 0;
+  }
+
+  .grid-3 {
+    padding: 2.5rem 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}

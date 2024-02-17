@@ -16,7 +16,7 @@
 }
 
 .grid {
-  box-shadow: 10px 8px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   display: grid;
   width: 45rem;
@@ -29,7 +29,7 @@
 
 .grid-1 {
   grid-area: grid-1;
-  background: #fff;
+  background: #fff9f9;
   height: 14.5rem;
   padding: 2.5rem 2.8rem 1.4rem;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -39,12 +39,12 @@
 }
 
 .grid-1__title {
-  color: hsl(179, 62%, 43%);
+  color: hsl(179, 61%, 35%);
   font-size: 1.5rem;
 }
 
 .grid-1__guarantee-info {
-  color: hsl(71, 73%, 54%);
+  color: hsl(71, 76%, 45%);
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -53,12 +53,12 @@
   width: 90%;
   line-height: 1.7;
   font-size: 1.05rem;
-  color: hsl(218, 22%, 67%);
+  color: hsl(217, 25%, 59%);
 }
 
 .grid-2 {
   grid-area: grid-2;
-  background: hsl(179, 62%, 43%);
+  background: hsl(179, 58%, 36%);
   padding: 2.5rem 2.8rem;
   border-radius: 0 0 0 0.5rem;
 }
@@ -78,7 +78,7 @@
 
 .grid-2__price span {
   font-size: 1rem;
-  color: hsl(179, 58%, 63%);
+  color: hsl(179, 72%, 73%);
   margin: 0 0.3rem;
   display: inline-block;
   vertical-align: middle;
@@ -97,7 +97,7 @@
 }
 
 .btn__signUp {
-  background: hsl(71, 73%, 54%);
+  background: hsl(71, 67%, 52%);
   text-decoration: none;
   color: #fff;
   width: 100%;
@@ -108,13 +108,13 @@
 }
 
 .btn__signUp:hover {
-  background: hsl(71, 62%, 50%);
+  background: hsl(71, 58%, 47%);
 }
 
 .grid-3 {
   position: relative;
   grid-area: grid-3;
-  background: hsla(179, 61%, 44%, 0.794);
+  background: hsla(179, 41%, 48%, 0.794);
   padding: 2.5rem 2.8rem;
   border-radius: 0 0 0.5rem 0;
 }
@@ -127,7 +127,7 @@
 
 .grid-3__list {
   list-style: none;
-  color: hsl(179, 69%, 78%);
+  color: hsl(178, 100%, 90%);
   line-height: 1.5;
   margin-top: 0.5rem;
 }
@@ -137,7 +137,7 @@
   right: 0;
   bottom: 0;
   padding: 0.2rem;
-  background: hsl(179, 58%, 63%);
+  background: hsl(179, 70%, 55%);
   border-radius: 0.5rem 0 0.5rem 0;
   width: 2rem;
   cursor: pointer;
@@ -157,7 +157,7 @@
   z-index: -1;
   padding: 1rem;
   margin-top: 0.5rem;
-  background: hsl(170, 96%, 71%);
+  background: hsl(170, 15%, 68%);
   width: 100%;
   grid-area: grid-4;
   border-radius: 0.5rem;
@@ -174,12 +174,12 @@
 .attribution {
   font-size: 13px;
   text-align: center;
-  color: hsl(178, 59%, 41%);
+  color: hsl(179, 75%, 11%);
   font-weight: bold;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(228, 77%, 45%);
 }
 
 .sr-only {
